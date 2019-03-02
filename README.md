@@ -1,2 +1,5 @@
 # System
 The best way to manage your Server easily
+
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">System</span> von <a xmlns:cc="http://creativecommons.org/ns#" href="inventive.group" property="cc:attributionName" rel="cc:attributionURL">YPGames | Pascal</a> ist lizenziert unter einer <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Namensnennung - Nicht-kommerziell - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz</a>.<br />Beruht auf dem Werk unter <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/phans11/System" rel="dct:source">https://github.com/phans11/System</a>.<br />Über diese Lizenz hinausgehende Erlaubnisse können Sie unter <a xmlns:cc="http://creativecommons.org/ns#" href="dev.inventive.group/rights" rel="cc:morePermissions">dev.inventive.group/rights</a> erhalten.

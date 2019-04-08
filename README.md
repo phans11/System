@@ -124,8 +124,7 @@ NEW! ➥ /skull <player> (alias: /head)
 Permission
 system.skull
 ___
-[SPOILER="Placeholder"]
-[code]
+
 Placeholder for all commands (Unless otherwise stated):
 ➥ %sender% - To get the sender of a command
 ➥ %player% - to get the player which send a command
@@ -151,13 +150,11 @@ Placeholder for /head
 ➥ %player% - to get the player which send a command
 ➥ %target% - to get the targeted player of a command
 ➥ %uuid% - to get the uuid of the player
-[/code]
-[/SPOILER]
+
 ___
 
 Config's
-[SPOILER="config.yml"]
-[code]prefix:
+refix:
   system: "&eSystem &8\xbb"
   msg: "&5MSG &8\xbb"
 error:
@@ -231,10 +228,9 @@ listener:
     join:
       enable: true
     quit:
-      enable: true[/code]
-[/SPOILER]
-[SPOILER="connection.yml"]
-[code]messages:
+      enable: true
+      
+messages:
   connection:
     enable: true
     teamspeak:
@@ -304,10 +300,8 @@ listener:
           permission: system.extra.5
           join: '&eDer Spieler &f%player% &ehat den Server betreten!'
           quit: '&eDer Spieler &f%player% &ehat den Server verlassen!'
-[/code]
-[/SPOILER]
-[SPOILER="messages.yml"]
-[code]messages:
+
+messages:
   player:
     afk:
       permission: system.afk
@@ -595,11 +589,9 @@ listener:
         '6': '  '
         '7': '&e- Unser &b&lTeamSpeak-Server &e&l-'
         '8': '  '
-[/code]
-[/SPOILER]
+
 ___
-[SPOILER="Permission Packages"]
-[code]➥ System
+➥ System
 system.admin - to have all permissions of system
 
 Commands:
@@ -676,19 +668,16 @@ With the permission "system.weather.sun" you can only change the weather to sun 
 
 With the permission "system.weather.rain" you can only change the weather to rain on the server.
 
-With the permission "system.weather.thunder" you can only change the weather to thunder on the server[/code]
-[/SPOILER]
+With the permission "system.weather.thunder" you can only change the weather to thunder on the server
 
 
 Developer-Area
 
 ➥ API - System
 
-[SPOILER="API - System"]
-[code]UUIDFetcher:
+UUIDFetcher:
 
-UUIDFetcher.getUUID(name); - To receive the uuid of an user[/code]
-[/SPOILER]
+UUIDFetcher.getUUID(name); - To receive the uuid of an user
 
 
 [*] Coming soon! - RoadMap

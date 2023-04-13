@@ -2,8 +2,8 @@
 
 Welcome to the official Wiki of System. System is a free Minecraft plugin to manage your server easily without using many plugins.
 
-**How can i download System?**  
-Stable Build: [https://www.spigotmc.org/resources/system.36457/](https://www.spigotmc.org/resources/system.36457/)  
+**How can i download System?**\
+Stable Build: [https://www.spigotmc.org/resources/system.36457/](https://www.spigotmc.org/resources/system.36457/)\
 Dev Build: [https://www.spigotmc.org/resources/system-dev-version.66136/](https://www.spigotmc.org/resources/system-dev-version.66136/)
 
 ## Features
@@ -12,41 +12,41 @@ Dev Build: [https://www.spigotmc.org/resources/system-dev-version.66136/](https:
 
 * Here you can see the whole list of all commands which are available
 
-[See all Commands](https://system.docs.inventive.group/features/commands)
+[See all Commands](features/commands.md)
 
 ### Permissions
 
 * Here you can see the whole permissions to use all of the features 'System' have.
 
-[See all Permissions](https://system.docs.inventive.group/features/permissions)
+[See all Permissions](features/permissions.md)
 
 ### Addons
 
 * Create your own addons for System
 
-[Watch documentation](https://system.docs.inventive.group/addons/create-addon)
+[Watch documentation](broken-reference)
 
 
 
 ## Developer-Area
 
-* [SystemAPI](https://system.docs.inventive.group/developer-area/systemapi)
-* [SettingsAPI](https://system.docs.inventive.group/developer-area/settingsapi)
-* [ConfigAPI](https://system.docs.inventive.group/developer-area/configapi)
-* [HomeAPI](https://system.docs.inventive.group/developer-area/homeapi)
-* [LanguageAPI](https://system.docs.inventive.group/developer-area/languageapi)
+* [SystemAPI](developer-area/systemapi.md)
+* [SettingsAPI](developer-area/settingsapi.md)
+* [ConfigAPI](developer-area/configapi.md)
+* HomeAPI - Comes with integration of the HomeSystem
+
+
 
 ## Versions
 
 See detailed informations about the versions of 'System'
 
-* [Stable Build](https://system.docs.inventive.group/versions/stable-build)
-* [Dev Build](https://system.docs.inventive.group/versions/dev-build)
+* [Stable Build](versions/stable-build.md)
+* [Dev Build](versions/dev-build.md)
 
 ## Addons
 
-* [Official](https://system.docs.inventive.group/addons/addons-official)
-* [Unofficial](https://system.docs.inventive.group/addons/addons-unofficial)
+* Official
+* Unofficial
 
-[See the Documentation](https://system.docs.inventive.group/addons/create-addon)
-
+[See the Documentation](broken-reference)

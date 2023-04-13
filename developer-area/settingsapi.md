@@ -2,6 +2,7 @@
 
 ## How to hook into SettingsAPI
 
+{% code lineNumbers="true" %}
 ```java
 import de.isolveproblems.system.api.SettingsAPI;
 
@@ -30,4 +31,4 @@ public class YourProject extends JavaPlugin {
     }
 }
 ```
-
+{% endcode %}

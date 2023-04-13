@@ -2,6 +2,7 @@
 
 ## **How to hook into System**
 
+{% code lineNumbers="true" %}
 ```java
 import de.isolveproblems.system.api.SystemAPI;
 
@@ -30,4 +31,4 @@ public class YourProject extends JavaPlugin {
     }
 }
 ```
-
+{% endcode %}

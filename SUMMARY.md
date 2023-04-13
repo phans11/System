@@ -21,6 +21,7 @@
 
 ## Developer-Area
 
+* [Add System to your Workspace](developer-area/add-system-to-your-workspace.md)
 * [SystemAPI](developer-area/systemapi.md)
 * [SettingsAPI](developer-area/settingsapi.md)
 * [ConfigAPI](developer-area/configapi.md)
@@ -32,4 +33,3 @@
 * [Creating own Addons](addons/create-addon.md)
 * [Official Addons](addons/addons-official.md)
 * [Unofficial Addons](addons/addons-unofficial.md)
-

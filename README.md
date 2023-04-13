@@ -1,5 +1,8 @@
 # Welcome
 
+[![](https://jitpack.io/v/phans11/System_Code.svg)](https://jitpack.io/#phans11/System_Code)
+[![](https://jitci.com/gh/phans11/System_Code/svg)](https://jitci.com/gh/phans11/System_Code)
+
 Welcome to the official Wiki of System. System is a free Minecraft plugin to manage your server easily without using many plugins.
 
 **How can i download System?**\

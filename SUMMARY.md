@@ -19,14 +19,14 @@
 * [Stable Build](versions/stable-build.md)
 * [Dev Build](versions/dev-build.md)
 
-## Developer-Area
+## For Developers
 
-* [Add System to your Workspace](developer-area/add-system-to-your-workspace.md)
-* [SystemAPI](developer-area/systemapi.md)
-* [SettingsAPI](developer-area/settingsapi.md)
-* [ConfigAPI](developer-area/configapi.md)
-* [HomeAPI](developer-area/homeapi.md)
-* [LanguageAPI](developer-area/languageapi.md)
+* [Using System as Developer](for-developers/add-system-to-your-workspace.md)
+* [SystemAPI](for-developers/systemapi.md)
+* [SettingsAPI](for-developers/settingsapi.md)
+* [ConfigAPI](for-developers/configapi.md)
+* [HomeAPI](for-developers/homeapi.md)
+* [LanguageAPI](for-developers/languageapi.md)
 
 ## Addons
 

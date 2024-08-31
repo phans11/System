@@ -14,9 +14,7 @@ public class ConfigurationMessages {
 
     public void getConfig() {
         config = new ConfigAPI("plugins/YourProject", "config.yml", yourProject);
-        
         config.getConfig().addDefault("config.prefix", "&c[YourProject]");
-        
         config.saveConfig();
     }
 }
@@ -70,7 +68,7 @@ import your.mainclass.project-name
 
 public class YourCommand implements CommandExecutor {
 
- private finale YourProject yourProject = YourProject.getPlugin(YourProject.class);
+ private final YourProject yourProject = YourProject.getPlugin(YourProject.class);
  
  @Override
  public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {

@@ -4,7 +4,7 @@
 
 ## Features
 
-* [Commands](features/commands.md)
+* [Commands and Permissions](features/commands.md)
 * [Permissions](features/permissions.md)
 * [Addons](features/about-addons.md)
 

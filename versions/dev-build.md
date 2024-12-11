@@ -1,4 +1,5 @@
 # Dev Build
 
-You can access all dev-versions of 'System' here: [https://www.spigotmc.org/resources/system-dev-version.66136/](https://www.spigotmc.org/resources/system-dev-version.66136/)
+**System on Spigot**: [https://www.spigotmc.org/resources/system-dev-version.66136/](https://www.spigotmc.org/resources/system-dev-version.66136/)
 
+**System is also available on Modrinth:** [https://modrinth.com/plugin/system\_](https://modrinth.com/plugin/system_)

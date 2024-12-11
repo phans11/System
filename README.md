@@ -1,6 +1,6 @@
 # Welcome
 
-[![](https://jitpack.io/v/phans11/System\_Code.svg)](https://jitpack.io/#phans11/System\_Code) [![](https://jitci.com/gh/phans11/System\_Code/svg)](https://jitci.com/gh/phans11/System\_Code)
+[![](https://jitpack.io/v/phans11/System_Code.svg)](https://jitpack.io/#phans11/System_Code) [![](https://jitci.com/gh/phans11/System_Code/svg)](https://jitci.com/gh/phans11/System_Code)
 
 Welcome to the official Wiki of System. System is a free Minecraft plugin to manage your server easily without using many plugins.
 
@@ -10,17 +10,11 @@ Dev Build: [https://www.spigotmc.org/resources/system-dev-version.66136/](https:
 
 ## Features
 
-### Commands
+### Commands & Permissions
 
 * Here you can see the whole list of all commands which are available
 
-[See all Commands](features/commands.md)
-
-### Permissions
-
-* Here you can see the whole permissions to use all of the features 'System' have.
-
-[See all Permissions](features/permissions.md)
+[See all Commands and Permissions](./#commands-and-permissions)
 
 ### Addons
 
@@ -31,9 +25,9 @@ Dev Build: [https://www.spigotmc.org/resources/system-dev-version.66136/](https:
 ## Developer-Area
 
 * [SystemAPI](for-developers/systemapi.md)
-* [SettingsAPI](for-developers/settingsapi.md)
+* [SettingsAPI](broken-reference) (removed from Project)
 * [ConfigAPI](for-developers/configapi.md)
-* HomeAPI - Comes with integration of the HomeSystem
+* [HomeAPI](for-developers/homeapi.md)
 
 ## Versions
 

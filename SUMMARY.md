@@ -5,7 +5,6 @@
 ## Features
 
 * [Commands and Permissions](features/commands.md)
-* [Permissions](features/permissions.md)
 * [Addons](features/about-addons.md)
 
 ## Support
@@ -23,7 +22,6 @@
 
 * [Using System as Developer](for-developers/add-system-to-your-workspace.md)
 * [SystemAPI](for-developers/systemapi.md)
-* [SettingsAPI](for-developers/settingsapi.md)
 * [ConfigAPI](for-developers/configapi.md)
 * [HomeAPI](for-developers/homeapi.md)
 * [LanguageAPI](for-developers/languageapi.md)

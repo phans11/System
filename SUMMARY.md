@@ -10,8 +10,9 @@
 ## Support
 
 * [FAQ](support/faq.md)
-* [Changelog](support/changelog.md)
-* [Error-Codes](support/error-codes.md)
+* [Changelog](support/changelog/README.md)
+  * [v0.4.11-dev](support/changelog/v0.4.11-dev.md)
+  * [0.4.9.7-dev](support/changelog/0.4.9.7-dev.md)
 
 ## Versions
 

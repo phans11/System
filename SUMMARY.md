@@ -25,7 +25,9 @@
 * [SystemAPI](for-developers/systemapi.md)
 * [ConfigAPI](for-developers/configapi.md)
 * [HomeAPI](for-developers/homeapi.md)
-* [LanguageAPI](for-developers/languageapi.md)
+* [RankAPIv2](for-developers/rankapiv2.md)
+* [RankAPIv3](for-developers/rankapiv3.md)
+* [MenuHandler](for-developers/menuhandler.md)
 
 ## Addons
 

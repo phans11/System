@@ -14,20 +14,17 @@ Dev Build: [https://www.spigotmc.org/resources/system-dev-version.66136/](https:
 
 * Here you can see the whole list of all commands which are available
 
-[See all Commands and Permissions](./#commands-and-permissions)
-
-### Addons
-
-* Create your own addons for System
-
-[Watch documentation](broken-reference/)
+[All Commands and Permissions](./#commands-and-permissions)
 
 ## Developer-Area
 
 * [SystemAPI](for-developers/systemapi.md)
-* [SettingsAPI](broken-reference) (removed from Project)
+* SettingsAPI - removed with Release v0.4.11-dev
 * [ConfigAPI](for-developers/configapi.md)
 * [HomeAPI](for-developers/homeapi.md)
+* RankAPIv2 - deprecated with Release v0.4.11-dev
+* RankAPIv3 - implemented with Release v0.4.11-dev
+* MenuHandler
 
 ## Versions
 
@@ -36,9 +33,11 @@ See detailed informations about the versions of 'System'
 * [Stable Build](versions/stable-build.md)
 * [Dev Build](versions/dev-build.md)
 
-## Addons
-
-* Official
-* Unofficial
-
 [See the Documentation](broken-reference/)
+
+### Addons
+
+* Create your own addons for System
+
+[Watch documentation](broken-reference/)
+

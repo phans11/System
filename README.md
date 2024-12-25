@@ -22,9 +22,9 @@ Dev Build: [https://www.spigotmc.org/resources/system-dev-version.66136/](https:
 * SettingsAPI - removed with Release v0.4.11-dev
 * [ConfigAPI](for-developers/configapi.md)
 * [HomeAPI](for-developers/homeapi.md)
-* RankAPIv2 - deprecated with Release v0.4.11-dev
-* RankAPIv3 - implemented with Release v0.4.11-dev
-* MenuHandler
+* [RankAPIv2](for-developers/rankapiv2.md) - deprecated with Release v0.4.11-dev
+* [RankAPIv3](for-developers/rankapiv3.md) - implemented with Release v0.4.11-dev
+* [MenuHandler](for-developers/menuhandler.md)
 
 ## Versions
 

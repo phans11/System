@@ -1,5 +1,13 @@
 # ConfigAPI
 
+
+
+{% hint style="info" %}
+The ConfigAPIv2 will be deprecated and replaced with ConfigAPIv3 with System v0.4.12-dev.
+
+After the release of ConfigAPIv3 a new documentation will follow.
+{% endhint %}
+
 ### Overview
 
 The `ConfigAPI` is a utility class designed to simplify the management of YAML configuration files in a Spigot plugin. It provides functionality for creating, loading, saving, and modifying configuration files, including player-specific configurations and inline comments.

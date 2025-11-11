@@ -1,0 +1,119 @@
+name: HomeAPI v2 Roadmap
+
+on:
+  workflow_dispatch: # manually trigger to import tasks
+  push:
+    branches:
+      - main
+
+jobs:
+  setup-roadmap:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create HomeAPI Project Roadmap
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const projectTitle = "🏠 HomeAPI v2 Development Roadmap";
+
+            // 1️⃣ Ensure project exists
+            const { data: projects } = await github.rest.projects.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+            });
+
+            let project = projects.find(p => p.name === projectTitle);
+            if (!project) {
+              project = (await github.rest.projects.createForRepo({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                name: projectTitle,
+                body: "Development roadmap for HomeAPI v2 - The most advanced home system in Minecraft."
+              })).data;
+            }
+
+            // 2️⃣ Define labels
+            const labels = [
+              { name: "feature-core", color: "0366d6", description: "Core HomeAPI logic" },
+              { name: "feature-personalization", color: "a371f7", description: "Player customization features" },
+              { name: "feature-teleport", color: "0e8a16", description: "Teleportation and safety features" },
+              { name: "feature-gui", color: "cfd3d7", description: "GUI and UX-related tasks" },
+              { name: "feature-admin", color: "d93f0b", description: "Admin tools and utilities" },
+              { name: "integration", color: "fbca04", description: "Integration with other APIs or commands" },
+              { name: "performance", color: "5319e7", description: "Async and optimization work" },
+              { name: "security", color: "b60205", description: "Data protection and private homes" },
+              { name: "api", color: "0052cc", description: "Developer SDK and hooks" },
+              { name: "i18n", color: "fef2c0", description: "Localization / Config Keys" }
+            ];
+
+            for (const label of labels) {
+              try {
+                await github.rest.issues.createLabel({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  ...label
+                });
+              } catch (err) {
+                if (err.status !== 422) console.log(`⚠️ Label ${label.name} already exists`);
+              }
+            }
+
+            // 3️⃣ Define milestones
+            const milestones = [
+              { title: "Milestone 1 — Core Improvements", description: "Default home and core API polish." },
+              { title: "Milestone 2 — Smart Personalization", description: "Player customization and metadata." },
+              { title: "Milestone 3 — Advanced Teleportation", description: "Warmups, cooldowns, and safety checks." },
+              { title: "Milestone 4 — GUI Enhancements", description: "Full interactive GUI overhaul." },
+              { title: "Milestone 5 — Integration Features", description: "Economy, ranks, and PlaceholderAPI integration." },
+              { title: "Milestone 6 — Admin Tools", description: "Admin utilities, cleanup, and backups." },
+              { title: "Milestone 7 — Performance & API", description: "Async SQL and developer-facing hooks." },
+              { title: "Milestone 8 — Unique Differentiators", description: "Smart Return, portals, and fun extras." }
+            ];
+
+            for (const m of milestones) {
+              await github.rest.issues.createMilestone({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: m.title,
+                description: m.description
+              });
+            }
+
+            // 4️⃣ Define main tasks
+            const tasks = [
+              { title: "Implement Default Home System", milestone: "Milestone 1 — Core Improvements", labels: ["feature-core"] },
+              { title: "SpectateCommand Integration", milestone: "Milestone 1 — Core Improvements", labels: ["integration"] },
+              { title: "Add Home Tags & Categories", milestone: "Milestone 2 — Smart Personalization", labels: ["feature-personalization"] },
+              { title: "Add Custom Home Icons", milestone: "Milestone 2 — Smart Personalization", labels: ["feature-personalization"] },
+              { title: "Add Home Descriptions & Notes", milestone: "Milestone 2 — Smart Personalization", labels: ["feature-personalization"] },
+              { title: "Teleport Warmup & Safety", milestone: "Milestone 3 — Advanced Teleportation", labels: ["feature-teleport"] },
+              { title: "Combat Lock & Rank Cooldowns", milestone: "Milestone 3 — Advanced Teleportation", labels: ["feature-teleport", "integration"] },
+              { title: "HomeGUIv2 Overhaul", milestone: "Milestone 4 — GUI Enhancements", labels: ["feature-gui"] },
+              { title: "Economy & Rank Integration", milestone: "Milestone 5 — Integration Features", labels: ["integration"] },
+              { title: "Shared / Team Homes", milestone: "Milestone 5 — Integration Features", labels: ["feature-personalization", "integration"] },
+              { title: "Admin Home Viewer & Cleanup", milestone: "Milestone 6 — Admin Tools", labels: ["feature-admin"] },
+              { title: "Backup / Import / Export", milestone: "Milestone 6 — Admin Tools", labels: ["feature-admin"] },
+              { title: "Async SQL Operations", milestone: "Milestone 7 — Performance & API", labels: ["performance"] },
+              { title: "API Events & Hooks", milestone: "Milestone 7 — Performance & API", labels: ["api"] },
+              { title: "Smart Return System", milestone: "Milestone 8 — Unique Differentiators", labels: ["integration"] },
+              { title: "Home Portals & Multiworld Clusters", milestone: "Milestone 8 — Unique Differentiators", labels: ["feature-creative", "feature-ux"] }
+            ];
+
+            for (const t of tasks) {
+              const milestone = milestones.find(m => m.title === t.milestone);
+              const milestoneData = (await github.rest.issues.listMilestones({
+                owner: context.repo.owner,
+                repo: context.repo.repo
+              })).data.find(m => m.title === milestone.title);
+
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title: `🏠 ${t.title}`,
+                body: `**Description:** ${t.title}\n\n**Milestone:** ${t.milestone}\n\n**Labels:** ${t.labels.join(", ")}`,
+                milestone: milestoneData ? milestoneData.number : undefined,
+                labels: t.labels
+              });
+            }
+
+            console.log(`✅ HomeAPI v2 Roadmap successfully generated!`);
